@@ -1,6 +1,6 @@
 """
 This File is actually going to use our trained model and run the Udacity simulator based on the predictions.
-The Code for this file is inspired from the original Udacity Simulator Github Repo. They have provided 
+The Code for this file is taken from the original Udacity Simulator Github Repo. They have provided 
 this drive.py already.
 """
 
