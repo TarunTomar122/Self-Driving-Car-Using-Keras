@@ -42,7 +42,7 @@ def choose_image(data_dir, center, left, right, steering_angle):
 
 
 def random_flip(image, steering_angle):
-    if np.random.rand() < 0.5:
+    if np.random.rand() < 0.6:
         image = cv2.flip(image, 1)
         steering_angle = - steering_angle
     return image, steering_angle

@@ -22,9 +22,9 @@ from keras.optimizers import Adam
 # Path to our data directory
 DATA_DIR = 'data'
 # Percentage of test data that we want to create out of whole training data
-TEST_SIZE = 0.2
+TEST_SIZE = 0.25
 # Percentage of feautres to dropout in the DropOut Layer of our Model
-DROPOUT_PROB = 0.5
+DROPOUT_PROB = 0.3
 # Batch size to use while training our Model
 BATCH_SIZE = 40
 # No of Epochs to train the model
@@ -56,9 +56,7 @@ def create_model():
     """
     model = Sequential()
     # First layer of our model is just normalizing our input images.
-    # The method of normalizing could be anything such as to divide by 256 itself.
-    # But the one that we are using here is taken from the paper as it works the best.
-    model.add(Lambda(lambda x: x/127.5-1.0, input_shape=INPUT_SHAPE))
+    model.add(Lambda(lambda x: x/256-0.5, input_shape=INPUT_SHAPE))
     # Now we are going to add some Convulation Layers identical to paper
     model.add(Conv2D(24, (5, 5), activation='elu', strides=(2, 2)))
     model.add(Conv2D(36, (5, 5), activation='elu', strides=(2, 2)))
