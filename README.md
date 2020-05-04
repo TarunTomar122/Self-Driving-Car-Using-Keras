@@ -4,7 +4,7 @@ This repository contains files for training and testing a deep Neural Network ai
 # Steps-To-Run  
 1.First Step is to install all the dependencies on your machine.                    
                    
-                   pip install requirements.txt                    
+                   pip install -r requirements.txt                    
 2.Download the udacity Simulator from their official github repo.                     
                    
                    https://github.com/udacity/self-driving-car-sim     
