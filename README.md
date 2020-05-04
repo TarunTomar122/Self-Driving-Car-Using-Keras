@@ -24,8 +24,12 @@ In this model.py file you can play with some basic features like learning rate a
 Note - When you try to generate your custom data through the simulator you might come across a problem while running the model.py file.                               
        This is because your generated data_log.csv file is inaccurate and doesn't go hand in hand with the code. To fix the error, your generated data csv file must be modified to have it's first row as shown in the image below                           
                                                 
-![Fixing The Error](https://github.com/TarunTomar122/Self-Driving-Car-Using-Keras/blob/master/images/errorFix.png)                           
-                                    
+![Fixing The Error](https://github.com/TarunTomar122/Self-Driving-Car-Using-Keras/blob/master/images/errorFix.png)  
+                  
+# Model Training                    
+![Fixing The Error](https://github.com/TarunTomar122/Self-Driving-Car-Using-Keras/blob/master/images/modelArchitecture.PNG)
+![Fixing The Error](https://github.com/TarunTomar122/Self-Driving-Car-Using-Keras/blob/master/images/modelSummary.PNG)
+
 # Resources                                     
 1.https://github.com/ManajitPal/BehavioralCloning                                 
 2.https://github.com/udacity/self-driving-car-sim                             
